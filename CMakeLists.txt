@@ -9,6 +9,12 @@ include_directories(eigen3)
 #find_package (Eigen3 3.3 REQUIRED NO_MODULE)
 #include_directories(${EIGEN3_INCLUDE_DIR})
 
+
+# 添加编译选项
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3")
+
+
+
 set(SOURCES src/Boundary.cpp src/Edge.cpp src/Face.cpp src/FormTrait.cpp src/LSCM.cpp
             src/HalfEdge.cpp src/Homology.cpp src/Mesh.cpp src/Point.cpp src/Vertex.cpp src/Graph.cpp)
 
